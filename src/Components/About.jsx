@@ -21,10 +21,10 @@ export default function About() {
             <table>
                 <tr>
                     <td>
-                    <Owner name="Yossi" year = "16" img="https://purepng.com/public/uploads/large/businessman-1aq.png"/>
+                    <Owner role="owner" name="Yossi" year = "16" img="https://purepng.com/public/uploads/large/businessman-1aq.png"/>
                     </td>
                     <td>
-                    <Owner name="Avi" year = "14" img="https://freepngimg.com/download/businessman/4-businessman-png-image.png"/>
+                    <Owner role="owner" name="Avi" year = "14" img="https://freepngimg.com/download/businessman/4-businessman-png-image.png"/>
                     </td>
                 </tr>
             </table>

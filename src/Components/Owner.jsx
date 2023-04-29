@@ -17,6 +17,7 @@ export default function Owner(prop) {
             <tr>
                 <td>
                     <Div>
+                        <h1>{prop.role}</h1>
                         <h1>name: {prop.name}</h1>
                         <h2>{prop.year} years  in the business </h2>
                         <img height={200} width={300} src={prop.img}/>
