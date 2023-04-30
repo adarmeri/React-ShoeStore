@@ -24,7 +24,7 @@ export default function Shoes() {
     `;
 
 const [posts , setPost] = useState([]);
-const [count , setCount] = useState(0);
+
 
 
 useEffect(() => {
