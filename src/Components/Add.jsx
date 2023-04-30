@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Route, Routes, Link } from "react-router-dom"
 import { useParams,useNavigate } from "react-router-dom";
-import { addRequest } from "../API/api";
+import { addRequest , getRequest} from "../API/api";
 
 
 
@@ -35,7 +35,6 @@ export default function Add() {
     color: white;
     padding: 5px 15px;
     border-radius: 5px;
-    text-transform: uppercase;
     margin: 10px 0px;
     cursor: pointer;
     box-shadow: 2px lightgray;
@@ -53,6 +52,7 @@ export default function Add() {
        const img = document.getElementById("img").value;
        if(name.match(/[a-z]/) && price.match(/[0-9]/) && img!=""){
        addRequest(name,price,img);
+       getRequest();
        navigate(-1);
        }
        else
@@ -64,7 +64,7 @@ export default function Add() {
     return (
       <>
         <center>
-        <H1>add shoe</H1>
+        <H1>Add shoe</H1>
             <Div>
             <center>
                 <table>

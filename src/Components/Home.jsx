@@ -38,7 +38,7 @@ export default function Home() {
     return (
       <>
         <center>
-            <H1>home</H1>
+            <H1>Home</H1>
             <table>
                 <tr>
                     <td>

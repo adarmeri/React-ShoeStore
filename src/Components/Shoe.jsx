@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { useParams,useNavigate,Link } from "react-router-dom";
 import axios from "axios";
-import { sdata, getSRequest , deleteRequest , updateRequest } from "../API/api";
+import { sdata, getSRequest , deleteRequest , updateRequest , getRequest } from "../API/api";
 import styled from "styled-components";
 
 export default function Shoe()
@@ -12,7 +12,6 @@ export default function Shoe()
     padding: 5px 15px;
     border-radius: 5px;
     
-    text-transform: uppercase;
     margin: 10px 0px;
     cursor: pointer;
     box-shadow: 2px lightgray;
@@ -62,6 +61,7 @@ useEffect(() => {
         if(name.match(/[a-z]/) && price.match(/[0-9]/) && img!="")
         {
             updateRequest(shoeId,name,price,img);
+            getRequest();
             navigate(-1);
         }
         else

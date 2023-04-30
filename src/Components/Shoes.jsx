@@ -40,7 +40,6 @@ const Button = styled(Link)`
   padding: 5px 15px;
   border-radius: 5px;
   
-  text-transform: uppercase;
   margin: 10px 0px;
   cursor: pointer;
   box-shadow: 2px lightgray;
@@ -56,7 +55,7 @@ return (
           <table>
             <tr>
               <td>
-                  <H1>shoes</H1>
+                  <H1>Shoes</H1>
               </td>
               <td>
                   <br/>
@@ -75,7 +74,7 @@ return (
                                 <p> price : {el.price}$</p>
                                 <img style={{width:150 , height:100}} src={el.picture}/>
                                 <br/><br/>
-                                <Button to={`/Shoes/${el.id}`} > Info </Button>
+                                <Button to={`/Shoes/${el.id}`} > info </Button>
                       </Div>
               
        
