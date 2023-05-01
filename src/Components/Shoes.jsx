@@ -29,10 +29,17 @@ const [posts , setPost] = useState([]);
 
 useEffect(() => {
   getRequest();
-  setInterval(() => {
+ const intr = setInterval(() => {
     setPost(data.data);
   }, 1);
+
+setTimeout(() => {
+  clearInterval(intr);
+}, 1000);
+
 }, []);
+
+
 
 const Button = styled(Link)`
   background-color: #e91e63;

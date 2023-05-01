@@ -49,8 +49,11 @@ useEffect(() => {
     getSRequest(shoeId);
     setInterval(() => {
         setPost(sdata.data);
-    }, 1);
-
+    }, 10);
+    
+    setTimeout(() => {
+        clearInterval(intr);
+      }, 1000);
   }, []);
 
     function editItem()
